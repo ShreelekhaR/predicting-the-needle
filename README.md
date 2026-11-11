@@ -1,7 +1,15 @@
-# Open-vocabulary satellite event anticipation
+# Predicting the Needle in a Petabyte Scale Haystack
+
+<a href="https://neurips.cc/"><img src="assets/neurips.svg" alt="NeurIPS" height="40"></a> **NeurIPS 2026**
 
 Predict what a location will look like when an ongoing event completes, from a sequence of
 satellite image embeddings, then retrieve the event by text description.
+
+**Official website:** https://www.cs.cornell.edu/~revankar/predicting-the-needle
+
+![Teaser: global satellite event dataset, temporal observations encoded by a vision encoder, a temporal model predicting the future embedding, and three capabilities: change detection, open-vocabulary prediction, completion forecast](assets/teaser.png)
+
+![Model: weekly image embeddings and their velocity go into the anticipation model, which predicts the embedding at horizon h and the time to completion; a change gate decides whether to retrieve an event description or report no change](assets/architecture.png)
 
 ## 1. Set up
 
