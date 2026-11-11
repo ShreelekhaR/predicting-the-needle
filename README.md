@@ -6,8 +6,8 @@ satellite image embeddings, then retrieve the event by text description.
 ## 1. Set up
 
 ```bash
-git clone <public repo URL> anticipation
-cd anticipation
+git clone https://github.com/ShreelekhaR/predicting-the-needle.git
+cd predicting-the-needle
 conda create -n anticipation python=3.11 -y
 conda activate anticipation
 pip install -r requirements.txt
@@ -57,4 +57,6 @@ For RemoteCLIP or Sentinel-2, use the matching test set (`test_remoteclip.pt`, `
 
 ## License
 
-CC BY-NC-SA 4.0
+**Code:** Apache License 2.0 (see `LICENSE`).
+
+**Data and model checkpoints:** CC BY-NC-SA 4.0 (non-commercial). Imagery © Planet Labs PBC.
