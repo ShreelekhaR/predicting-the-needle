@@ -1,0 +1,11 @@
+{
+  "description": "Class grouping for eval. Each class keeps its own text embedding. Grouping only relaxes correctness: a hit on any class in the same group counts as correct.",
+  "groups": {
+    "Harvest": ["Harvest 2", "Shaped Crop Harvest", "Wheat Harvest"],
+    "Power Plant Construction": ["Power Plant Construction", "Power Plant Construction 2"],
+    "Mining/Extraction": ["Mining", "Quarry Expansion", "Pit Extraction"],
+    "Flooding": ["Riverine Flood", "Storm Surge Flooding"],
+    "Deforestation": ["Tropical Deforestation", "Mangrove Deforestation"],
+    "Sedimentation": ["River Delta Deposition", "Estuary Sedimentation Change"]
+  }
+}

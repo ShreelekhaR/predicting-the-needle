@@ -1,0 +1,16 @@
+data/
+results*/
+logs/
+checkpoints/
+*.pt
+*.npz
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+sweep*/
+repro/
+figures/
+*.log
+*.egg-info/
+.venv/
+.env

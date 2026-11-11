@@ -1,0 +1,8 @@
+torch>=2.0
+numpy
+scikit-learn
+pandas
+matplotlib
+# only for re-encoding class text embeddings
+open_clip_torch
+google-cloud-aiplatform

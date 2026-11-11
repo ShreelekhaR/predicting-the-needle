@@ -1,0 +1,47 @@
+{
+  "description": "V4 split definitions. Single source of truth for all downstream scripts.",
+
+  "oov_positive_classes": [
+    "Housing Development",
+    "Highway Construction",
+    "Center Pivot Irrigation Installation",
+    "Logistics Hub Construction",
+    "Bridge Construction",
+    "Pipeline Corridor Clearing",
+    "Reservoir Drought",
+    "High-Voltage Transmission Line",
+    "Contour Ploughing",
+    "Dam Construction"
+  ],
+
+  "oov_negative_base_classes": [
+    "Residential Neighborhood",
+    "Stable Desert",
+    "Container Port",
+    "Glacier Field",
+    "Mature Orchard",
+    "Coastal Beach",
+    "University Campus",
+    "Wind Farm",
+    "Cemetery",
+    "Mountain Pass"
+  ],
+
+  "geo_holdout_boxes": [
+    {"name": "Vietnam Coast", "lat_min": 10, "lat_max": 22, "lon_min": 105, "lon_max": 112},
+    {"name": "US Southeast", "lat_min": 25, "lat_max": 35, "lon_min": -90, "lon_max": -78},
+    {"name": "Persian Gulf", "lat_min": 22, "lat_max": 32, "lon_min": 44, "lon_max": 56}
+  ],
+
+  "test_seen_source": "data/confirmed_correct_samples.csv",
+  "completion_dates_source": "data/completion_dates_v4.json",
+
+  "split_logic": {
+    "oov_unseen_pos": "Human-verified events from OOV positive classes",
+    "oov_unseen_neg": "Balanced sample from OOV negative classes (matching OOV pos count)",
+    "test_seen_pos": "Human-verified events from non-OOV classes",
+    "test_seen_neg": "Balanced sample from non-OOV negative classes (matching test pos count)",
+    "train": "Everything else (excluding non-verified OOV positive locations)",
+    "geo_holdout": "Orthogonal tag on test/OOV locations within geo boxes. Train locations in boxes are excluded."
+  }
+}
