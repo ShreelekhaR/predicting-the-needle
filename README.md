@@ -5,7 +5,8 @@
 Predict what a location will look like when an ongoing event completes, from a sequence of
 satellite image embeddings, then retrieve the event by text description.
 
-**Official website:** https://www.cs.cornell.edu/~revankar/predicting-the-needle
+**Official website:** https://www.cs.cornell.edu/~revankar/predicting-the-needle  
+**Paper:** [arXiv:2611.16000](https://arxiv.org/abs/2611.16000) · [Hugging Face](https://huggingface.co/papers/2611.16000)
 
 ![Teaser: global satellite event dataset, temporal observations encoded by a vision encoder, a temporal model predicting the future embedding, and three capabilities: change detection, open-vocabulary prediction, completion forecast](assets/teaser.png)
 
@@ -68,3 +69,29 @@ For RemoteCLIP or Sentinel-2, use the matching test set (`test_remoteclip.pt`, `
 **Code:** Apache License 2.0 (see `LICENSE`).
 
 **Data and model checkpoints:** CC BY-NC-SA 4.0 (non-commercial). Imagery © Planet Labs PBC.
+
+## Citation
+
+S. Revankar, M. Klassen, C. Levit, A. Hoover, K. Bala, and B. Hariharan. Predicting the Needle in a Petabyte Scale Haystack: Open-Vocabulary Event Anticipation in Satellite Imagery. In Advances in Neural Information Processing Systems (NeurIPS), 2026. arXiv:2611.16000.
+
+```bibtex
+@inproceedings{revankar2026predicting,
+  title     = {Predicting the Needle in a Petabyte Scale Haystack: Open-Vocabulary Event Anticipation in Satellite Imagery},
+  author    = {Revankar, Shreelekha and Klassen, Mikhail and Levit, Creon and Hoover, Ash and Bala, Kavita and Hariharan, Bharath},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  eprint    = {2611.16000},
+  archivePrefix = {arXiv}
+}
+```
+
+Preprint:
+
+```bibtex
+@article{revankar2026predicting_arxiv,
+  title   = {Predicting the Needle in a Petabyte Scale Haystack: Open-Vocabulary Event Anticipation in Satellite Imagery},
+  author  = {Revankar, Shreelekha and Klassen, Mikhail and Levit, Creon and Hoover, Ash and Bala, Kavita and Hariharan, Bharath},
+  journal = {arXiv preprint arXiv:2611.16000},
+  year    = {2026}
+}
+```
